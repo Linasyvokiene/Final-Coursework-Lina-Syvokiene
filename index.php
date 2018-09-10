@@ -359,11 +359,11 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
             </div>
       </div>
 
-      <div class="highlight-box">
+      <!-- <div class="highlight-box">
             <div>
               <p><span id="text">Flexbox</span><br><i class="fas fa-check"></i></p>
             </div>
-      </div>
+      </div> -->
 
       <div class="highlight-box">
             <div>

@@ -235,29 +235,27 @@ ul#nav li a {
 
 header {
    position: relative;
-   /* height: 300px; */
+   height: auto;
    background: url("images/kava3.jpg") no-repeat top center;
    background-size: cover;
 	 text-align: center;
    overflow: hidden;
+   padding-bottom: 50px;
    }
 
 header .banner {
    margin: 0 auto;
-   width: 80%;
-   padding-top: 200px;
-   padding-bottom: 150px;
+   width: 100%;
+   padding-top: 230px;
+   padding-bottom: 200px;
  
 }
-
-
-
 
 
 header .banner-text h1 {
    font: 5em 'opensans-bold', sans-serif;
    color: #fff;
-   margin: 0 auto 18px auto;
+   margin: 0 auto 0 auto;
    text-shadow: 0px 1px 3px rgba(71, 71, 71, 0.8);
 }
 header .banner-text h3 {
@@ -542,7 +540,6 @@ background-color:#757777;
 /* ---- Education ---- */
 
 .resume{
-  /* background-color: rgb(221, 221, 221); */
   background: url(images/minimal.jpg) no-repeat top center;
   background-size: cover;
   background-attachment: fixed;
@@ -554,16 +551,14 @@ background-color:#757777;
   display: none;
 }
 
-
-
-
 ol {
 	position: relative;
-	display: block;
-	margin: 100px 150px;
+  display: block;
+  margin: 165px 150px; 
+  margin-top: 200px;
 	height: 5px;
   background: #7bc3d1;
-  
+   
 }
 ol::before,
 ol::after {
@@ -587,14 +582,14 @@ ol::after {
   border-radius: 3px;
 }
 
-/* .education-big{
-  padding-bottom: 50px;
-} */
+.education-big{
+  padding-bottom: 5px;
+}
 
 .education-big li {
 	position: relative;
 	display: inline-block;
-	float: left;
+	/* float: left; */
 	width: 150px;
 	height: 50px;
 }
@@ -604,9 +599,7 @@ ol::after {
   vertical-align: middle;
 }
 
-.education-big > hr{
-  margin-bottom: 200px;
-}
+
 
 #strong{
   font-size: 16px;
@@ -1307,17 +1300,18 @@ visibility: hidden;
   
   header {
       position: relative;
-      height: 600px;
+      height: auto;
       background: url("images/kava3.jpg") no-repeat top center;
       background-size: cover;
       text-align: center;
       overflow: hidden;
+      padding-bottom: 100px;
       }
   
   header .banner {
       margin: 0 auto;
       width: 85%;
-      padding-top: 200px;
+      padding-top: 220px;
   }
   
   header .banner-text h1 {
