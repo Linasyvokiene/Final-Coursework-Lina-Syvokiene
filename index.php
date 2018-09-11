@@ -593,8 +593,6 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
       <div class="messagebox">
         <textarea name="feedback" placeholder="Your message"><?php echo $feedback; ?></textarea><br>
         <?php echo "<p style='color:red; font-size:14px;'>" .$error['feedback'] ."</p>"; ?><br>
-        <!-- 1+1= <br><input type="number" name ="sum" placeholder = "Select sum" /> 
-        <!-- <?php echo  "<p style='color:red; font-size:12px;'>" .$error['sum'] ."</p>"; ?>  --> 
       </div>
           <input type="text" name ="empty" value=""/><br>
           <button type="submit" class="leavefeedbackbtn">SEND</button>	
