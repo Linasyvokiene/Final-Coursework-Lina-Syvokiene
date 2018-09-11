@@ -3,7 +3,7 @@
 /* ===========Desktop=============== */
 
 
-@media only screen and (min-width: 1201px){
+@media only screen and (min-width: 992px){
 
 body { 
   /* background-color: rgb(228, 228, 247); */
@@ -57,6 +57,7 @@ nav #brand a:hover {
 }
 
 nav #menu li {
+  font-family: 'Open Sans', sans-serif;
   display: inline-block;
   padding: 0px 30px;
   cursor: pointer;
@@ -247,7 +248,7 @@ header .banner {
    margin: 0 auto;
    width: 100%;
    padding-top: 230px;
-   padding-bottom: 200px;
+   padding-bottom: 168px;
  
 }
 
@@ -256,13 +257,13 @@ header .banner-text h1 {
    font: 5em 'opensans-bold', sans-serif;
    color: #fff;
    margin: 0 auto 0 auto;
-   text-shadow: 0px 1px 3px rgba(71, 71, 71, 0.8);
+   text-shadow: 0px 1px 3px rgba(1, 44, 41, 0.6);
 }
 header .banner-text h3 {
   font-family: 'Quicksand', sans-serif;
    margin: 0 auto;
-   padding-top: 30px;
-   width: 60%;
+   padding-top: 10px;
+   width: 50%;
    color: #3A6A6F;;
 }
 header .banner-text h3 span,
@@ -353,8 +354,6 @@ header .scrolldown a:hover {
 }
 
 
-}
-
 .download button:hover {
 background-color:#757777;
 }	
@@ -365,7 +364,7 @@ background-color:#757777;
 
 #main h2{  
     line-height: 20px;
-    color:  #454949;
+    color: #454949;
     font-weight: 400;
     font-size: 34px;
     padding: 25px;
@@ -382,14 +381,16 @@ background-color:#757777;
 }
 
 .block > img {
-  width: 20%;
-  height: 20%;
-  padding-bottom: 50px;
+  width: 15%;
+  height: 15%;
+  /* padding-bottom: 50px; */
+  border-radius: 50%;
+  margin-bottom: 40px;
 }
 
 .about p{
   text-align: justify;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
   
@@ -589,7 +590,7 @@ ol::after {
 .education-big li {
 	position: relative;
 	display: inline-block;
-	/* float: left; */
+	float: left;
 	width: 150px;
 	height: 50px;
 }
@@ -611,7 +612,7 @@ ol::after {
 
 li .diplome {
   font-family: 'Quicksand', sans-serif;
-  position: absolute;
+  position: relative;
   top: -100px;
   left: 20%;
   color: #3e3f41;
@@ -687,7 +688,7 @@ li:hover .description {
   flex-basis: auto;
   position: relative;
   height: auto;
-  padding: 0 50px;
+  padding: 0 100px;
 }
 
 .boxed-section>* {
@@ -730,9 +731,11 @@ li:hover .description {
 
 .courses{
   padding-top: 70px;
+  
 }
 
 .courses_wrapper{
+  padding: 0 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -818,7 +821,7 @@ li:hover .description {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding: 0 50px;
+  padding: 0 100px;
   /* padding-bottom: 50px; */
 }
 
@@ -966,18 +969,19 @@ padding-top: 20px;
   box-shadow: 4px 4px 10px rgb(123,195,209, .4);
 }
 
-.leave>h2{
+/* .leave>h2{
   font-size: 66px;
   text-shadow: 0px 1px 2px #9d9e9e;
   color: rgb(164, 169, 172);
-}
+} */
 
 .leave #smth{
 font-family: 'Quicksand', sans-serif;
-font-size: 30px;
-text-shadow: 0px 1px 2px #989c9b;
+font-size: 26px;
+text-shadow: 0px 1px 2px #b8b8b8;
 padding-top: 0;
 margin-top: 0;
+color: #3A6A6F;
 }
 
 .feedback input[type=name], .feedback input[type=email], .feedback input[type=text],.feedback textarea, .feedback input[type=number] {
@@ -1017,6 +1021,7 @@ background-color: rgb(121, 121, 121);
   font-weight: bold;
   letter-spacing: 1.5px;
   font-size: 14px;
+  background-color: rgb(223, 223, 223);
 }
 
 /* Go To Top Button */
@@ -1054,7 +1059,7 @@ font-size: 40px;
   background-color: transparent;
  }
 
-
+}
 
 /* =======================TABLET============================== */
 
@@ -1110,6 +1115,7 @@ font-size: 40px;
   }
   
   nav #menu li {
+    font-family: 'Open Sans', sans-serif;
     display: inline-block;
     padding: 0px 30px;
     cursor: pointer;
@@ -1298,113 +1304,115 @@ visibility: hidden;
   /* =============Header======== */
   
   
+  
   header {
-      position: relative;
-      height: auto;
-      background: url("images/kava3.jpg") no-repeat top center;
-      background-size: cover;
-      text-align: center;
-      overflow: hidden;
-      padding-bottom: 100px;
-      }
-  
-  header .banner {
-      margin: 0 auto;
-      width: 85%;
-      padding-top: 220px;
-  }
-  
-  header .banner-text h1 {
-      font: 4em 'opensans-bold', sans-serif;
-      color: #fff;
-      margin: -70px auto 18px auto;
-      text-shadow: 0px 1px 3px rgba(71, 71, 71, 0.8);
-  }
-
-  header .banner-text h3 {
-    font-family: 'Quicksand', sans-serif;
-      margin: 0 auto;
-      padding-top: 40px;
-      width: 70%;
-      color: #3A6A6F;;
-  }
-  header .banner-text h3 span,
-  header .banner-text h3 a {
-      color: #fff;
-  }
-
-  header .banner-text hr {
-      width: 60%;
-      margin: 18px auto 24px auto;
-      border-color: #2F2D2E;
-      border-color: rgba(150, 150, 150, .1);
-  }
-  
-  /* header social links */
-  header .social {
-      margin: 24px 0;
-      font-size: 30px;
-      text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
-  }
-
-  header .social li {
-      display: inline-block;
-      margin: 0 15px;
-      padding: 0;
-  }
-
-  header .social li a { 
-    color: #fff; 
-  }
-
-  header .social li a:hover {
-    color: rgb(169, 184, 184); 
-    font-size: 32px;
-  }
-  
-  header>.social{
-    opacity: 0.90;
-    transition: transform .3s;
-  }
-  
-  @media only screen and (max-width: 300px){
-
-    header .scrolldown {
-      visibility: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url("images/kava3.jpg") no-repeat top center;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
     }
 
-    #resize.active {
-      visibility: visible;
-      opacity: 0.99;
-      height: 600px;
+.banner-text{
+  /* margin-top: 120px; */
+}
+
+
+header .banner {
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 200px;
+    padding-bottom: 100px;
     }
 
-  }
+header .banner-text h1 {
+    font: 3em 'opensans-bold', sans-serif;
+    color: #fff;
+    margin: 0 auto 18px auto;
+    text-shadow: 0px 1px 3px rgba(71, 71, 71, 0.8);
+} 
 
-  
+header .banner-text h3 {
+  font-family: 'Quicksand', sans-serif;
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 80%;
+    color: #3A6A6F;;
+}
+header .banner-text h3 span,
+header .banner-text h3 a {
+    color: #fff;
+}
+
+header .banner-text hr {
+    width: 60%;
+    margin: 18px auto 24px auto;
+    border-color: #2F2D2E;
+    border-color: rgba(150, 150, 150, .1);
+}
+
+/* header social links */
+header .social {
+    margin: 24px 0;
+    font-size: 30px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+}
+
+header .social li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 0;
+}
+
+header .social li a { 
+  color: #fff; 
+}
+
+header .social li a:hover {
+  color: rgb(169, 184, 184); 
+  font-size: 32px;
+}
+
+header>.social{
+  opacity: 0.90;
+  transition: transform .3s;
+}
+
+@media only screen and (max-width: 300px){
+
   header .scrolldown {
     visibility: hidden;
   }
 
-  /* scrolldown link */
-  header .scrolldown a {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      margin-left: -29px;
-      color: rgb(204, 200, 200);
-      border-color: #2F2D2E;
-      font-size: 42px;
-  
-      -webkit-transition: all .3s ease-in-out;
-      -moz-transition: all .3s ease-in-out;
-      -o-transition: all .3s ease-in-out;
-      transition: all .3s ease-in-out;
+  #resize.active {
+    visibility: visible;
+    opacity: 0.99;
+    height: 600px;
   }
-  header .scrolldown a:hover { 
-    color: rgb(140, 143, 143); 
-  }
-  
+
+}
+
+
+/* scrolldown link */
+header .scrolldown a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -29px;
+    color: rgb(204, 200, 200);
+    border-color: #2F2D2E;
+    font-size: 42px;
+
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+header .scrolldown a:hover { 
+  color: rgb(140, 143, 143); 
+}
   /* ===================About Section=============== */
   
   #main{
@@ -1414,7 +1422,7 @@ visibility: hidden;
   
   .aboutsection { 
     margin:0 auto;
-    width: 90%;
+    width: 80%;
     align-items: center;
   }
   
@@ -1464,14 +1472,16 @@ visibility: hidden;
   }
   
   .block > img {
-    width: 30%;
-    height: 30%;
-    padding-bottom: 50px;
+    width: 20%;
+    height: 20%;
+    /* padding-bottom: 50px; */
+    border-radius: 50%;
+    margin-bottom: 40px;
   }
   
   .about p{
     text-align: justify;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
   }
     
@@ -1521,134 +1531,105 @@ visibility: hidden;
     padding: 30px 0 100px;
   }
   
-  .experience p{
-    text-align: justify;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  /* The actual timeline (the vertical ruler) */
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-  }
-  
-  /* Container around content */
-  .container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-  }
-  
-  /* The circles on the timeline */
-  .container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
-    background-color: white;
-    border: 4px solid  #7bc3d1;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  /* Place the container to the left */
-  .left {
-    left: 0;
-  }
-  
-  /* Place the container to the right */
-  .right {
-    left: 50%;
-  }
-  
-  /* Add arrows to the left container (pointing right) */
-  .left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-  }
-  
-  /* Add arrows to the right container (pointing left) */
-  .right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-  /* Fix the circle for containers on the right side */
-  .right::after {
-    left: -16px;
-  }
-  
-  /* The actual content */
-  .content {
-    padding: 5px 30px 10px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-  }
-  
-  
-  /* Media queries - Responsive timeline on screens less than 600px wide */
 
-  /* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
   
-  /* Full-width containers */
-  .container {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-  
-  /* Make sure that all arrows are pointing leftwards */
-  .education::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-  
-  /* Make sure all circles are at the same spot */
-  .left::after, .right::after {
-    left: 15px;
-  }
-  
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
+.experience p{
+  text-align: justify;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid  #7bc3d1;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 5px 30px 10px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+
     
     
 /* ========= Education=========*/
@@ -1830,7 +1811,7 @@ padding-top: 0;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 50px 50px;
   width: 100%;
 }
@@ -1843,7 +1824,8 @@ padding-top: 0;
 .flip-box-front p{
   font-family: 'Prompt', sans-serif;
   font-weight: bolder;
-  font-size: 24px;
+  font-size: 22px;
+  padding: 10px;
   color: rgb(52, 52, 56)
 }
 
@@ -1859,7 +1841,7 @@ padding-top: 0;
   padding: 10px;
   background-color: transparent;
   width: 40%;
-  height: 150px;
+  height: 140px;
   perspective: 1000px;
 }
 
@@ -1917,14 +1899,14 @@ padding-top: 0;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 0 50px;
   padding-bottom: 100px;
 }
 
-section {
+/* section {
   justify-content: space-between;
-}
+} */
 
 .textontop{
   background-color: rgb(114, 117, 117);
@@ -1945,7 +1927,8 @@ section {
 
 .under {
   opacity: 1;
-  width: 100%;
+  width: 90%;
+  height: 170px;
   transition: .5s ease;
   backface-visibility: hidden;
   border-radius: 5px;
@@ -2118,6 +2101,7 @@ background-color: rgb(165, 162, 162);
   font-weight: bold;
   letter-spacing: 1.5px;
   font-size: 14px;
+  background-color: rgb(223, 223, 223);
 }
 
 /* Go To Top Button */
@@ -2515,6 +2499,7 @@ visibility: hidden;
   }
   
   .aboutsection { 
+    font-family: 'Ruslan Display', cursive;
     margin:0 auto;
     width: 80%;
     align-items: center;
@@ -2549,7 +2534,7 @@ visibility: hidden;
   
   #main h2{  
       line-height: 20px;
-      color:  #1b383d;
+      color:  #454949;
       font-weight: 400;
       font-size: 34px;
       padding: 25px 0;
@@ -2566,14 +2551,16 @@ visibility: hidden;
   }
   
   .block > img {
-    width: 50%;
-    height: 50%;
-    padding-bottom: 50px;
+    width: 30%;
+    height: 30%;
+    /* padding-bottom: 50px; */
+    border-radius: 50%;
+    margin-bottom: 30px;
   }
   
   .about p{
+    font-family: 'Open Sans', sans-serif;
     text-align: justify;
-    font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
   }
     
@@ -2938,7 +2925,7 @@ padding-top: 0;
 .flip-box-front p{
   font-family: 'Prompt', sans-serif;
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 18px;
   color: rgb(52, 52, 56)
 }
 
@@ -2953,8 +2940,8 @@ padding-top: 0;
   padding: 10px;
   margin: 20px;
   background-color: transparent;
-  width: 100%;
-  height: 150px;
+  width: 80%;
+  height: 120px;
   perspective: 1000px;
 }
 
@@ -3041,11 +3028,12 @@ section {
 
 .under {
   opacity: 1;
-  width: 100%;
+  width: 90%;
+  height: 170px;
   transition: .5s ease;
   backface-visibility: hidden;
   border-radius: 5px;
-        box-shadow: 4px 4px 10px rgba(44, 46, 46, 0.4);
+  box-shadow: 4px 4px 10px rgba(44, 46, 46, 0.4);
   border: 1px solid rgb(123,195,209, .4);
 }
 
@@ -3222,6 +3210,8 @@ background-color: rgb(165, 162, 162);
   font-weight: bold;
   letter-spacing: 1.5px;
   font-size: 14px;
+  background-color: rgb(223, 223, 223);
+
 }
 
 /* Go To Top Button */

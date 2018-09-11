@@ -148,7 +148,7 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
     <section class="aboutsection">  
     <hr>
     <div class="block">
-      <img src="images/me2.jpg" alt="me"/>
+      <img src="images/me111.jpg" alt="me" border-radius="50%"/>
     </div>
   <p>My journey as Web developer is just starting, because my previous jobs were not related to web development, but my professional path was always closely linked to IT. I have always dreamed of having a job that I really enjoy, but only now I discovered my favorite activity web development that can make my dream come true. I started with an independent online course, continued my training at the academy and in the future I plan to attend advanced courses. Now is the time to put my knowledge into practice and to improve with the help from the experienced ones.</p><br>
   <p> I'm looking for a place not only to gain experience, but also to contribute my knowledge and skills to the company's well-being. Although the experience of web developer is still rather limited, I will not be restricted by this as I am driven by the need of improvement and self-expression in this field and I am motivated and focused to achieve my goal. My re-qualification proves that I am not afraid of change and challenges and can quickly adapt to the new environment. I have accumulated experience in other areas that can also benefit in my new role. Creditworthiness assessment has developed excellent analytical skills, logical thinking and critical-case management capability. I have experience of coaching as I periodically trained new employees to manage technical databases. Work in the field of procurement allowed to improve negotiation skills and taught the specifics of planning and process management. By working as a specialist in IT department I had the opportunity to get to know more about the development, testing and implementation of specific applications. Experience in multinational companies improved my communication skills both inside and outside the company.</p><br>
@@ -624,7 +624,7 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
 
   <div class="copyright">
 
-  <p>&copy; 2018 Lina Šyvokienė. All rights reserved.
+  <p>&copy; 2018 Lina Šyvokienė. All rights resserved.
   </p>   
 
   </div>
@@ -647,7 +647,7 @@ $(document).ready(function(){
       var hash = this.hash;
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 1100, function(){
+      }, 1000, function(){
 
         window.location.hash = hash;
       });
