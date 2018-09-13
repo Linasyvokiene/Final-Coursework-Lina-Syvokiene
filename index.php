@@ -4,9 +4,10 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
 	$feedback=isset ($_POST ['feedback'])? $_POST ['feedback']:'';
 	$success = 	isset($_GET['success']) ? $_GET['success'] : '';
   $empty = isset ($_POST ['empty'])? $_POST ['empty']:'';
-  // $msg = "<h3> Thak you for your message.</h3>";
-  // $to = "linagriciute.g@gmail.com";
-  // $subject = "New contact filled";
+  $msg = "<h3> Thak you for your message.</h3>";
+  $to = "linagriciute.g@gmail.com";
+  $subject = "New contact filled";
+  $message = $feedback;
   // $message = "Please be informed";
   
   
@@ -40,7 +41,7 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
 }
 		else {
 		
-      $conn = new mysqli('localhost','root','','feedback'); 
+      $conn = new mysqli('localhost', 'linasyvokiene_linasyvokiene', 'hidden', 'linasyvokiene_feedback');
 			if ($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
             }
@@ -51,9 +52,9 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
 			$saved = $conn->query ("INSERT INTO feedback (Name, Email, Feedback) 
 			VALUES  ('$name','$email','$feedback') ");
 			if($saved){
-        header('Location: index.php');
-        // header('Location: ' . $_SERVER['PHP_SELF'] . '?success=OK');
-        // mail($to, $subject, $message);
+        // header('Location: index.php');
+        header('Location: ' . $_SERVER['PHP_SELF'] . '?success=OK');
+        mail($to, $subject, $message);
         // echo "Your mail has been sent successfuly ! Thank you for your feedback";
        
 			}else{
@@ -120,14 +121,14 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
     <div class="banner">
       <div class="banner-text">
       <h1 class="headline" id="home">Hello I'm Lina</h1>
-        <h3> ABOUT ME. <br> I'm a highly motivated and persistent Web Developer who always willing to learn new skills in order to enhance my abilities. I'm constantly challenging myself to learn new Front-End technologies and tools and feeling very enthusiastic about it. And I enjoy bringing ideas to life in the browser.
+        <h3> I'm a highly motivated and persistent Web Developer who always willing to learn new skills in order to enhance my abilities. I'm constantly challenging myself to learn new Front-End technologies and tools and feeling very enthusiastic about it. And I enjoy bringing ideas to life in the browser.
         </h3>
         <hr />
         <ul class="social">
           <li><a href="https://www.linkedin.com/in/lina-šyvokienė-a92aba161" target="_blank"><i class="fab fa-linkedin"></i></a></li>
           <li><a href="https://github.com/Linasyvokiene" target="_blank"><i class="fab fa-github-square"></i></a></li>
           <li><a href="https://www.facebook.com/lina.griciute" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a href="mailto:linagriciute.g@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a></li>
+          <li><a href="mailto:info@linasyvokiene.info" target="_blank"><i class="fas fa-envelope"></i></a></li>
         </ul>
       </div>
     </div>
@@ -150,7 +151,7 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
     <div class="block">
       <img src="images/me111.jpg" alt="me" border-radius="50%"/>
     </div>
-  <p>My journey as Web developer is just starting, because my previous jobs were not related to web development, but my professional path was always closely linked to IT. I have always dreamed of having a job that I really enjoy, but only now I discovered my favorite activity web development that can make my dream come true. I started with an independent online course, continued my training at the academy and in the future I plan to attend advanced courses. Now is the time to put my knowledge into practice and to improve with the help from the experienced ones.</p><br>
+  <p>My journey as Web developer is just starting since my previous jobs were not related to web development, but my professional path was always closely linked to IT. I have always dreamed of having a job that I really enjoy, but only now I discovered my favorite activity web development that can make my dream come true. I started with an independent online courses, continued my training at the academy and in the future I plan to attend advanced courses. Now is the time to put my knowledge into practice and to improve with the help from the experienced ones.</p><br>
   <p> I'm looking for a place not only to gain experience, but also to contribute my knowledge and skills to the company's well-being. Although the experience of web developer is still rather limited, I will not be restricted by this as I am driven by the need of improvement and self-expression in this field and I am motivated and focused to achieve my goal. My re-qualification proves that I am not afraid of change and challenges and can quickly adapt to the new environment. I have accumulated experience in other areas that can also benefit in my new role. Creditworthiness assessment has developed excellent analytical skills, logical thinking and critical-case management capability. I have experience of coaching as I periodically trained new employees to manage technical databases. Work in the field of procurement allowed to improve negotiation skills and taught the specifics of planning and process management. By working as a specialist in IT department I had the opportunity to get to know more about the development, testing and implementation of specific applications. Experience in multinational companies improved my communication skills both inside and outside the company.</p><br>
   <p>Beside mentioned above, I am hardworking, business oriented, flexible, communicative, precise and responsible person. I appreciate good sense of humor, sharp mind, sincerity and openness. Therefore I feel confident that I could valuable asset to a company that is looking for hardworking and committed person in this field. </p>                      
     </section>
@@ -532,7 +533,7 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
       <div class="email">
         <div class="conticon">
           <div class="tooltip">
-          <a href="mailto:linagriciute.g@gmail.com" target="_blank" class="btn btn-default btn-lg"><i class="fas fa-envelope"></i></a><br><span class="tooltiptext">linagriciute.g@gmail.com</span>
+          <a href="mailto:info@linasyvokiene.info" target="_blank" class="btn btn-default btn-lg"><i class="fas fa-envelope"></i></a><br><span class="tooltiptext">info@linasyvokiene.info</span>
           </div>
         </div>
       </div> 
@@ -570,13 +571,13 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
 <!-- end of getin -->
 
 
-  <div class="feedback">
+   <div class="feedback">
     <section>
       <div class="leave">
       <h2 span id="smth">Or leave a message </span> </h2>
       </div>
 
-     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post"/>
+     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 
       <div class="row" id="fdbck">
         <div class="cellone">
@@ -593,6 +594,7 @@ $name=isset ($_POST ['name'])? $_POST ['name']:'';
       <div class="messagebox">
         <textarea name="feedback" placeholder="Your message"><?php echo $feedback; ?></textarea><br>
         <?php echo "<p style='color:red; font-size:14px;'>" .$error['feedback'] ."</p>"; ?><br>
+
       </div>
           <input type="text" name ="empty" value=""/><br>
           <button type="submit" class="leavefeedbackbtn">SEND</button>	

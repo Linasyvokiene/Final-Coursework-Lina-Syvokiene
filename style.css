@@ -271,7 +271,7 @@ header .banner-text h3 a {
    color: #fff;
 }
 header .banner-text hr {
-   width: 60%;
+   width: 40%;
    margin: 18px auto 24px auto;
    border-color: #2F2D2E;
    border-color: rgba(150, 150, 150, .1);
@@ -327,6 +327,7 @@ header .scrolldown a:hover {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
+
 
 .aboutsection { 
   margin:0 auto;
@@ -943,13 +944,13 @@ section {
 }
 
 .cellone{
-  width: 200px;
+  width: 240px;
   height: 50px;
   padding-right: 10px;
 }
 
 .celltwo{
-  width: 200px;
+  width: 240px;
   height: 50px;
   padding-left: 10px;
 }
@@ -959,9 +960,14 @@ padding-top: 20px;
 }
 
 .feedback textarea{
-  width: 400px;
-  height: 75px;
+  width: 480px;
+  height: 95px;
   box-shadow: 4px 4px 10px rgb(123,195,209, .4);
+  resize: none;
+}
+
+.texarea{
+  resize: none;
 }
 
 .feedback input{
@@ -1380,10 +1386,11 @@ header>.social{
   transition: transform .3s;
 }
 
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 400px){
 
-  header .scrolldown {
+  header .smoothscroll {
     visibility: hidden;
+    display: none;
   }
 
   #resize.active {
@@ -2043,11 +2050,15 @@ padding-top: 20px;
   width: 400px;
   height: 75px;
   box-shadow: 4px 4px 10px rgb(123,195,209, .4);
+  resize: none;
 }
 
+
 .feedback input{
+  height: 35px;
   width: 100%;
   box-shadow: 4px 4px 10px rgb(123,195,209, .4);
+ 
 }
 
 .leave>h2{
@@ -2068,6 +2079,7 @@ margin-top: 0;
   border: 1px solid rgb(173, 171, 171);
   padding: 5px;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 
@@ -2391,7 +2403,8 @@ visibility: hidden;
   
   header {
       position: relative;
-      height: 600px;
+      width: 100%;
+      height: auto;
       background: url("images/kava3.jpg") no-repeat top center;
       background-size: cover;
       text-align: center;
@@ -2401,7 +2414,8 @@ visibility: hidden;
   header .banner {
       margin: 0 auto;
       width: 85%;
-      padding-top: 200px;
+      padding-top: 180px;
+      padding-bottom: 50px;
   }
   
   header .banner-text h1 {
@@ -2413,6 +2427,7 @@ visibility: hidden;
 
   header .banner-text h3 {
     font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
       margin: 0 auto;
       padding-top: 40px;
       width: 100%;
@@ -2433,13 +2448,13 @@ visibility: hidden;
   /* header social links */
   header .social {
       margin: 24px 0;
-      font-size: 30px;
+      font-size: 35px;
       text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
   }
 
   header .social li {
       display: inline-block;
-      margin: 0 15px;
+      margin: 0 5px;
       padding: 0;
   }
 
@@ -2514,7 +2529,7 @@ visibility: hidden;
   
   .download button{
     background-color: rgb(169, 171, 172);
-    color: white;
+    color: rgb(240, 232, 232);
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -2551,8 +2566,8 @@ visibility: hidden;
   }
   
   .block > img {
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
     /* padding-bottom: 50px; */
     border-radius: 50%;
     margin-bottom: 30px;
@@ -2747,7 +2762,7 @@ visibility: hidden;
   background: url(images/minimal.jpg) no-repeat top center;
   background-size: cover;
   background-attachment: fixed;
-  min-width: 10px;
+  /* min-width: 10px; */
   width: 100%;
   padding-top: 50px;
   padding-bottom: 0;
@@ -2760,7 +2775,7 @@ visibility: hidden;
 }
 
 .education{
-  display: unset;
+  /* display: unset; */
 }
 
 
@@ -2776,11 +2791,11 @@ visibility: hidden;
 }
 
 .boxed-section1>* {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .boxed-section1 div {
-  width: 300px;
+  width: 240px;
   height: auto;
 }
 
@@ -2792,8 +2807,8 @@ visibility: hidden;
 .highlight1-box>*{
   display: flex;
   align-items: center;
-  font-size: 18px;
-  color: black;
+  font-size: 14px;
+  color: rgb(92, 90, 90);
   text-transform: uppercase;
 }
 
@@ -2807,20 +2822,21 @@ visibility: hidden;
   padding: 5px;
   justify-content: center;
   border-radius: 5px;
-  box-shadow: 4px 4px 10px rgb(123,195,209);
-  border: 1px solid rgb(123,195,209, .4);
+  box-shadow: 4px 4px 10px rgb(139, 141, 141);
+  border: 1px solid rgba(143, 144, 145, 0.4);
+
 }
 
 .highlight-box{
   display: flex;
   flex-flow: row;
-  margin: 0;
-  margin-top: 40px;
+  margin-top: 0;
+  /* margin-top: 10px; */
 }
 
 
 #strong{
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #italic{
@@ -2848,7 +2864,7 @@ visibility: hidden;
   justify-content: center;
   flex-basis: auto;
   position: relative;
-  height: auto;
+  /* height: auto; */
 
 }
 
@@ -2866,7 +2882,7 @@ visibility: hidden;
 .highlight-box>*{
   display: flex;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
   color: black;
   text-transform: uppercase;
 }
@@ -2904,6 +2920,7 @@ visibility: hidden;
 
 /* ================Courses============== */
 
+@media only screen and (max-width: 300px){
 .courses{
 padding-top: 0;
 
@@ -2913,19 +2930,20 @@ padding-top: 0;
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 0 100px;
+  justify-content: center;
+  padding: 0 10px;
 }
 
 .flip-box>div { 
   box-shadow: 4px 4px 10px rgba(88, 88, 88, 0.4);
-  border: 1px solid rgb(123,195,209, .4);
+  border: 1px solid rgba(151, 151, 151, 0.4);
 }
 
 .flip-box-front p{
   font-family: 'Prompt', sans-serif;
   font-weight: bolder;
   font-size: 18px;
+  padding: 10px;
   color: rgb(52, 52, 56)
 }
 
@@ -2970,7 +2988,7 @@ padding-top: 0;
 
 .flip-box-front {
   background-color: #e7e6e7;
-  color: black;
+  color: rgb(92, 91, 91);
   align-items: center;
   text-align: center;
   border-radius: 5px;
@@ -2979,13 +2997,104 @@ padding-top: 0;
 
 .flip-box-back {
   background-color: transparent;
-  color: white;
+  color: rgb(112, 112, 112);
   transform: rotateY(180deg);
   align-items: center;
   text-align: center;
   border-radius: 10px;
   
 }
+}
+
+
+@media only screen and (min-width: 301px) and (max-width: 600px){
+
+  .courses{
+    padding-top: 0;
+    
+    }
+        
+    .courses_wrapper{
+      display: flex;
+      flex-flow: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 0 10px;
+    }
+    
+    .flip-box>div { 
+      box-shadow: 4px 4px 10px rgba(88, 88, 88, 0.4);
+      border: 1px solid rgba(151, 151, 151, 0.4);
+    }
+    
+    .flip-box-front p{
+      font-family: 'Prompt', sans-serif;
+      font-weight: bolder;
+      font-size: 18px;
+      padding: 10px;
+      color: rgb(52, 52, 56)
+    }
+    
+    .flip-box-back img{
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+    }
+    
+    .flip-box {
+      display: flex;
+      /* padding: 10px; */
+      margin: 10px;
+      background-color: transparent;
+      width: 50%;
+      height: 120px;
+      perspective: 1000px;
+    }
+    
+    .flip-box-inner {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 80%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-box-front, .flip-box-back {
+      display: flex;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .flip-box-front {
+      background-color: #e7e6e7;
+      color: rgb(92, 91, 91);
+      align-items: center;
+      text-align: center;
+      border-radius: 5px;
+            
+    }
+    
+    .flip-box-back {
+      background-color: transparent;
+      color: rgb(112, 112, 112);
+      transform: rotateY(180deg);
+      align-items: center;
+      text-align: center;
+      border-radius: 10px;
+      
+    }
+
+}
+
 
 
 /* ==========Trainings=========== */
@@ -3000,12 +3109,12 @@ padding-top: 0;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 0 50px;
-  padding-bottom: 100px;
+  padding: 0 px;
+  padding-bottom: 80px;
 }
 
 section {
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .textontop{
@@ -3014,15 +3123,15 @@ section {
   font-size: 16px;
   padding: 5px;
   border-radius: 5px;
-  width: 220px;
+  width: 180px;
   box-shadow: 4px 4px 10px rgba(44, 46, 46, 0.4);
-  border: 1px solid rgb(123,195,209, .4);
+  /* border: 1px solid rgba(73, 73, 73, 0.4); */
 }
 
 .train {
   margin: 20px;
   position: relative;
-  width: 80%;
+  width: 100%;
   height: auto;
 }
 
@@ -3033,12 +3142,12 @@ section {
   transition: .5s ease;
   backface-visibility: hidden;
   border-radius: 5px;
-  box-shadow: 4px 4px 10px rgba(44, 46, 46, 0.4);
-  border: 1px solid rgb(123,195,209, .4);
+  box-shadow: 4px 4px 10px rgba(117, 117, 117, 0.4);
+  border: 1px solid rgba(165, 166, 167, 0.4);
 }
 
 .middle {
-  transition: .5s ease;
+  /* transition: .5s ease; */
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -3117,11 +3226,13 @@ section {
 .feedback{
   display: flex;
   flex-flow: row;
+  margin: 0 auto;
   justify-content: center;
-  padding-bottom: 230px;
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-left: 30px;
+  width: 150px;
+  padding-bottom: 130px;
+  /* padding-top: 30px; */
+  /* padding-right: 30px;
+  padding-left: 30px; */
   width: 100%;
   
 }
@@ -3132,13 +3243,13 @@ section {
 }
 
 .cellone{
-  width: 160px;
+  width: 140px;
   height: 50px;
   padding-right: 10px;
 }
 
 .celltwo{
-  width: 160px;
+  width: 140px;
   height: 50px;
   padding-left: 10px;
 }
@@ -3148,9 +3259,10 @@ padding-top: 20px;
 }
 
 .feedback textarea{
-  width: 320px;
+  width: 280px;
   height: 75px;
   box-shadow: 4px 4px 10px rgb(123,195,209, .4);
+  resize: none;
 }
 
 .feedback input{
@@ -3176,6 +3288,7 @@ margin-top: 0;
   border: 1px solid rgb(173, 171, 171);
   padding: 5px;
   border-radius: 5px;
+  font-size: 14px;
 }
 
 
@@ -3191,8 +3304,8 @@ margin-top: 0;
   cursor: pointer;
   width: 100px;
   border-radius: 5px;
-  box-shadow: 4px 4px 10px rgba(88, 88, 88, 0.4);
-  border: 1px solid rgb(123,195,209, .4);
+  box-shadow: 4px 4px 10px rgba(58, 58, 58, 0.4);
+  /* border: 1px solid rgb(123,195,209, .4); */
 }
 
 .feedback button:hover {
@@ -3220,10 +3333,10 @@ font-size: 40px;
 }
 
 #go-top {
-  margin-top: -100px;
+  margin-top: -80px;
   left: 50%;
   font-size: 50px;
-  padding-bottom: 30px;
+  /* padding-bottom: 10px; */
 }
 
 #go-top a {
